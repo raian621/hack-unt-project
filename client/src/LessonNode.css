@@ -1,0 +1,11 @@
+.lesson-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 4px white;
+  background-color: #ffffff11;
+}
+
+.lesson-icon:hover {
+  background-color: #ffffff33
+}

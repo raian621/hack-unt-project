@@ -10,8 +10,8 @@ CORS(app)
 @app.get("/tree")
 def get_tree():
   tree = db.get_tree()
-  print(tree)
   return Response(status=200, response=json.dumps(tree))
+
 
 @app.get("/sections")
 def get_sections():
@@ -38,5 +38,22 @@ def get_questions(lesson):
 
 
 @app.post("/questions/<lesson>")
-def submit_question(lesson):
-  pass
+def submit_questions(lesson):
+  content = request.json
+  score = 0
+  print(content)
+  print("here")
+  if content != None:
+    for i, _ in enumerate(content):
+      section = db.LESSONS[lesson]
+      choices = db.SECTIONS[section]['lessons'][lesson]['quiz'][i]['choices']
+      for choice in choices:
+        print(choice['text'], content[i])
+        if choice['text'] == content[i] and choice['correct']:  
+          score += 1
+
+    score *= 100 / len(content)
+  db.update_score(lesson, score)
+  return Response(status=200, response=json.dumps({
+    'score': score
+  }))

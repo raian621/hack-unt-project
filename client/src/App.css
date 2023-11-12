@@ -1,18 +1,26 @@
-#root {
-  
-}
-
 .section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.section::after {
+.app {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0 3em 0;
+  font-size: 1.5em;
+}
+
+.section::before {
   content: "";
-  width: 90vw;
-  background-color: black;
-  height: 2px;
+  width: 80vw;
+  max-width: 500px;
+  background-color: var(--line-color);
+  height: 5px;
+  border-radius: 5px;
 }
 
 .section-content {
@@ -38,4 +46,33 @@
 .lesson {
   text-decoration: none;
   color: inherit
+}
+
+.lesson-reading {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.overconfidence-button {
+  text-decoration: none;
+  text-align: right;
+  padding: 20px;
+  background-color: #227722;
+  color: inherit;
+  border-radius: 50px;
+  width: fit-content;
+  text-align: center;
+  border: none;
+  font-size: 1em;
+}
+
+.overconfidence-button:hover {
+  border: solid 2px white;
+  padding: 18px;
+}
+
+.question {
+  width: 80%;
+  max-width: 600px;
 }

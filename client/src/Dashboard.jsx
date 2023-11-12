@@ -5,7 +5,7 @@ import Section from './Section';
 async function getSectionsData() {
   let res = await fetch("http://localhost:3000/tree")
   let sectionsData = await res.json()
-  
+  console.log(sectionsData)
   return sectionsData
 }
 
@@ -22,36 +22,11 @@ export default function Dashboard() {
   useEffect(() => {
     console.log(sections)
   }, [sections])
-
-  // const sections = [
-  //   {
-  //     name: "Introduction",
-  //     lessons: [
-  //       'Risk Management',
-  //       'Money Management'
-  //     ]
-  //   },
-  //   {
-  //     name: "Investing",
-  //     lessons: [
-  //       'Stocks',
-  //       'ETFs',
-  //       'Crypto'
-  //     ]
-  //   },
-  //   {
-  //     name: "Cryptocurrency",
-  //     lessons: [
-  //       "What is crypto",
-  //       "NFTs"
-  //     ]
-  //   }
-  // ]
  
   return (
     <>
+      <h1>SaveSmart Finance</h1>
       { sections.map(section => {
-        console.log("section:", section)
         return <Section name={section.name} lessons={section.lessons}/>
       })}
     </>

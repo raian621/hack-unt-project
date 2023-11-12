@@ -7,13 +7,15 @@ import Quiz from './Quiz'
 function App() {
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Dashboard/>}/>
-        <Route path="lesson/:name" element={<Lesson/>}/>
-        <Route path="quiz/:name" element={<Quiz/>}/>
-      </Routes>
-    </BrowserRouter>
+    <div className="app">
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Dashboard/>}/>
+          <Route path="lesson/:name" element={<Lesson/>}/>
+          <Route path="quiz/:name" element={<Quiz/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 

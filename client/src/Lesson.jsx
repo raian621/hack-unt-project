@@ -18,12 +18,12 @@ export default function Lesson() {
   useEffect(() => { getLessonData() }, [])
 
   return (
-    <>
+    <div className="lesson-reading">
       <h1>{ name }</h1>
 
       { content.map((paragraph, i) => <p key={i}>{ paragraph }</p>) }
 
-      <a href={`/quiz/${urlName}`}>Take quiz</a>
-    </>
+      <a className="overconfidence-button" href={`/quiz/${urlName}`}>Take quiz</a>
+    </div>
   )
 }

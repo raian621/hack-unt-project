@@ -1,6 +1,10 @@
 import os
 import json
 
+from redis import Redis
+
+rc = Redis(host="localhost", port=3001, decode_responses=True)
+
 LESSONS = {}
 SECTIONS = {
   "budgeting": {
@@ -25,15 +29,13 @@ SECTIONS = {
 
 for section in SECTIONS.keys():
   SECTIONS[section]['urlName'] = section
-  SECTIONS[section]['lessons'] = []
+  SECTIONS[section]['lessons'] = {}
   for lesson in os.listdir(f'mock_db/{section}'):
     lesson_name = lesson.replace('.json', '')
-    print(lesson)
     with open(f'mock_db/{section}/{lesson}') as file:
       lesson_data = json.load(file)
-      print(lesson_data)
-      SECTIONS[section]['lessons'].append(lesson_data)
-      LESSONS[lesson_name] = lesson_data
+      SECTIONS[section]['lessons'][lesson_name] = lesson_data
+    LESSONS[lesson_name] = section
 
 
 def get_sections():
@@ -45,29 +47,49 @@ def get_sections():
   ]
 
 def get_lessons(section):
-  print(SECTIONS[section])
   return list(SECTIONS[section]['lessons'])
 
 
 def get_questions(lesson):
-  return LESSONS[lesson]['quiz']
+  section = LESSONS[lesson]
+
+  return {
+    'name': SECTIONS[section]['lessons'][lesson]['name'],
+    'quiz': [{
+      'question': question['question'],
+      'choices': [ choice['text'] for choice in question['choices'] ]
+    } for question in SECTIONS[section]['lessons'][lesson]['quiz']]
+  }
 
 
 def get_lesson(lesson):
-  return LESSONS[lesson]
+  section = LESSONS[lesson]
+  return SECTIONS[section]['lessons'][lesson]
 
 
 def get_tree():
-  tree = [
-    {
+  tree = []
+
+  for section in SECTIONS.values():
+    newSection = {
       'urlName': section['urlName'],
       'name': section['name'],
-      'lessons': [
-        {
-          'urlName': lesson['urlName'],
-          'name': lesson['name']
-        } for lesson in section['lessons']
-      ]
-    } for section in SECTIONS.values()
-  ]
+      'lessons': []
+    }
+    tree.append(newSection)
+    for lesson in section['lessons'].values():
+      value = rc.get(lesson['urlName'])
+      value = value if value != None else 0
+      newSection['lessons'].append({
+        'urlName': lesson['urlName'],
+        'name': lesson['name'],
+        'score': value
+      })
   return tree
+
+
+def update_score(lesson, score):
+  rc.set(lesson, score)
+  section_name = LESSONS[lesson]
+  print(score)
+  SECTIONS[section_name]['lessons'][lesson]['score'] = score
