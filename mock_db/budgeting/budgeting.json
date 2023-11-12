@@ -3,9 +3,73 @@
   "urlName": "budgeting",
   "content": [
     "What is a budget? A budget is a plan for your spending. Tracking your purchases and living within a budget allows you to be confident that you’ve got the money to cover your essential living expenses. You’ll also be ready when unplanned expenses pop up, and even you’re able to pursue the things in life that are important to you.",
-    "If you earn a monthly income of $3,000, is that enough to pay for housing, food, insurance, health care, debt repayment and having fun without running out of money? That’s a lot to cover with a limited amount, but making a budget can determine if it’s possible."
+    "If you earn a monthly income of $3,000, is that enough to pay for housing, food, insurance, health care, debt repayment and having fun without running out of money? That’s a lot to cover with a limited amount, but making a budget can determine if it’s possible.",
+    "You can make a small and effective budget for yourself just by following these simple steps. Firstly, determine your income by calculating your total monthly income, including salary and other sources. It’s recommended that you use a conservative estimate if your income fluctuates. Then, make a list of fixed (rent, utilities) and variable (groceries, entertainment) monthly expenses. Include less frequent expenses by dividing annual or quarterly payments by 12.",
+    "Once you have a breakdown or your spending, create and balance your budget by subtracting total expenses from total income for a surplus or deficit. Allocate surplus to savings or paying down debts, or adjust spending if there's a deficit. We tUse budgeting tools to track and adjust regularly."
   ],
   "quiz": [
-    "dlkfjlsadjfkjsfdjdsfak"
+    {
+      "question": "What is the primary purpose of creating a budget?", 
+      "choices": [ 
+        { 
+          "text": "The primary purpose of creating a budget is to plan and track spending.",
+          "correct": true
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Why is making a budget important?", 
+      "choices": [
+        { 
+          "text": "Making a budget is crucial with a fixed monthly income because it helps determine if there's enough money to cover essential living expenses and be prepared for both planned and unplanned costs.",
+          "correct": true
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the first step recommended for creating a small and effective budget?",
+      "choices": [
+        {
+          "text": "Determine your income",
+          "correct": true
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    }
   ]
 }

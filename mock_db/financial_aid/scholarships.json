@@ -1,0 +1,70 @@
+{
+  "name": "Scholarships",
+  "urlName": "scholarships",
+  "content": [],
+  "quiz": [
+    {
+      "question": "Question #1",
+      "choices": [
+        {
+          "text": "Answer #1",
+          "correct": false
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Question #2",
+      "choices": [
+        {
+          "text": "Answer #1",
+          "correct": false
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Question #3",
+      "choices": [
+        {
+          "text": "Answer #1",
+          "correct": false
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

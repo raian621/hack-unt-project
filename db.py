@@ -6,14 +6,14 @@ SECTIONS = {
   "budgeting": {
     "name": "Budgeting"
   },
-  "credit_cards": {
-    "name": "Credit Cards"
-  },
   "debt": {
     "name": "Debt"
   },
   "financial_aid": {
     "name": "Financial Aid"
+  },
+  "credit_cards": {
+    "name": "Credit Cards"
   },
   "retirement_plans": {
     "name": "Retirement Plans"

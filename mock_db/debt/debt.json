@@ -1,0 +1,75 @@
+{
+  "name": "Debt",
+  "urlName": "debt",
+  "content": [
+    "Debt is a financial obligation that arises when an individual, organization, or government borrows money from a lender with the agreement to repay the borrowed sum along with interest over a specified period. This borrowed capital allows borrowers to make significant purchases, investments, or cover expenses that exceed their immediate financial capacity.",
+    "Common forms of debt include loans for education, mortgages for real estate purchases, credit card balances, and bonds issued by governments or corporations to raise capital. The terms of a debt arrangement, such as the interest rate, repayment period, and any collateral required, are typically outlined in a contractual agreement between the borrower and the lender.",
+    "Effective debt management is crucial for maintaining financial stability. While debt can be a useful tool for achieving financial goals, excessive or poorly managed debt can lead to financial stress and instability. Individuals and organizations need to carefully assess their borrowing needs, understand the terms of their debt agreements, and develop sound strategies for repayment.",
+    "By maintaining a healthy balance between leveraging debt for strategic purposes and avoiding overindebtedness, borrowers can navigate their financial obligations successfully and work towards their long-term financial objectives."
+  ],
+  "quiz": [
+    {
+      "question": "How can you succinctly define debt?",
+      "choices": [
+        {
+          "text": "Debt is an obligation to repay borrowed money, involving a promise to return the principal amount with interest over a specified period.",
+          "correct": true
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What distinguishes mortgages from credit cards in the realm of debt?",
+      "choices": [
+        {
+          "text": "Mortgages are loans specifically for real estate purchases, with the property serving as collateral, while credit cards represent revolving debt with periodic repayments and a set borrowing limit.",
+          "correct": true
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What are examples of common forms of debt, as mentioned in the reading?",
+      "choices": [
+        {
+          "text": "Loans for education and mortgages for real estate purchases.",
+          "correct": true
+        },
+        {
+          "text": "Answer #2",
+          "correct": false
+        },
+        {
+          "text": "Answer #3",
+          "correct": false
+        },
+        {
+          "text": "Answer #4",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
