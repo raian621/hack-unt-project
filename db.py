@@ -1,35 +1,73 @@
 import os
 import json
 
-sections = os.listdir('mock_db')
-
 LESSONS = {}
-SECTIONS = {}
+SECTIONS = {
+  "budgeting": {
+    "name": "Budgeting"
+  },
+  "credit_cards": {
+    "name": "Credit Cards"
+  },
+  "debt": {
+    "name": "Debt"
+  },
+  "financial_aid": {
+    "name": "Financial Aid"
+  },
+  "retirement_plans": {
+    "name": "Retirement Plans"
+  },
+  "stock_market": {
+    "name": "Stock Market"
+  }
+}
 
-for section in sections:
-  SECTIONS[section] = {}
+for section in SECTIONS.keys():
+  SECTIONS[section]['urlName'] = section
+  SECTIONS[section]['lessons'] = []
   for lesson in os.listdir(f'mock_db/{section}'):
     lesson_name = lesson.replace('.json', '')
     print(lesson)
     with open(f'mock_db/{section}/{lesson}') as file:
       lesson_data = json.load(file)
-      SECTIONS[section][lesson_name] = lesson_data
+      print(lesson_data)
+      SECTIONS[section]['lessons'].append(lesson_data)
       LESSONS[lesson_name] = lesson_data
 
 
 def get_sections():
-  return list(SECTIONS.keys())
-
+  return [
+    {
+      "name": section["name"],
+      "urlName": section["urlName"]
+    } for section in SECTIONS.values()
+  ]
 
 def get_lessons(section):
-  return list(SECTIONS[section].keys())
+  print(SECTIONS[section])
+  return list(SECTIONS[section]['lessons'])
 
 
 def get_questions(lesson):
   return LESSONS[lesson]['quiz']
 
 
-def get_content(lesson):
-  return LESSONS[lesson]['content']
+def get_lesson(lesson):
+  return LESSONS[lesson]
 
 
+def get_tree():
+  tree = [
+    {
+      'urlName': section['urlName'],
+      'name': section['name'],
+      'lessons': [
+        {
+          'urlName': lesson['urlName'],
+          'name': lesson['name']
+        } for lesson in section['lessons']
+      ]
+    } for section in SECTIONS.values()
+  ]
+  return tree

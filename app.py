@@ -6,6 +6,13 @@ import json
 app = Flask(__name__)
 CORS(app)
 
+
+@app.get("/tree")
+def get_tree():
+  tree = db.get_tree()
+  print(tree)
+  return Response(status=200, response=json.dumps(tree))
+
 @app.get("/sections")
 def get_sections():
   sections = db.get_sections()
@@ -18,9 +25,9 @@ def get_lessons(section):
   return Response(status=200, response=json.dumps(lessons))
 
 
-@app.get("/lessons/<lesson>")
+@app.get("/content/<lesson>")
 def get_content(lesson):
-  content = db.get_content(lesson)
+  content = db.get_lesson(lesson)
   return Response(status=200, response=json.dumps(content))
 
 
