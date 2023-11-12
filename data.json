@@ -1,27 +1,31 @@
 {
     "lessons": {
-
         "budgeting": {
             "read": [
                 "What is a budget? A budget is a plan for your spending. Tracking your purchases and living within a budget allows you to be confident that you’ve got the money to cover your essential living expenses. You’ll also be ready when unplanned expenses pop up, and even you’re able to pursue the things in life that are important to you.",
-                "If you earn a monthly income of $3,000, is that enough to pay for housing, food, insurance, health care, debt repayment and having fun without running out of money? That’s a lot to cover with a limited amount, but making a budget can determine if it’s possible."
+                "If you earn a monthly income of $3,000, is that enough to pay for housing, food, insurance, health care, debt repayment and having fun without running out of money? That’s a lot to cover with a limited amount, but making a budget can determine if it’s possible.",
+                "You can make a small and effective budget for yourself just by following these simple steps. Firstly, determine your income by calculating your total monthly income, including salary and other sources. It’s recommended that you use a conservative estimate if your income fluctuates. Then, make a list of fixed (rent, utilities) and variable (groceries, entertainment) monthly expenses. Include less frequent expenses by dividing annual or quarterly payments by 12.",
+                "Once you have a breakdown or your spending, create and balance your budget by subtracting total expenses from total income for a surplus or deficit. Allocate surplus to savings or paying down debts, or adjust spending if there's a deficit. We tUse budgeting tools to track and adjust regularly."
             ],
             "quiz": {
                 "1": [ "What is the primary purpose of creating a budget?", "The primary purpose of creating a budget is to plan and track spending.", "Answer #2", "Answer #3", "Answer #4" ],
                 "2": [ "Why is making a budget important?", "Making a budget is crucial with a fixed monthly income because it helps determine if there's enough money to cover essential living expenses and be prepared for both planned and unplanned costs.", "Answer #2", "Answer #3", "Answer #4" ],
-                "3": [ "Question #3", "Answer #1", "Answer #2", "Answer #3", "Answer #4" ]
+                "3": [ "What is the first step recommended for creating a small and effective budget?", " Determine your income", "Answer #2", "Answer #3", "Answer #4" ]
             }
         },
-
         "debt": {
-            "read": "",
+            "read": [
+                "Debt is a financial obligation that arises when an individual, organization, or government borrows money from a lender with the agreement to repay the borrowed sum along with interest over a specified period. This borrowed capital allows borrowers to make significant purchases, investments, or cover expenses that exceed their immediate financial capacity.",
+                "Common forms of debt include loans for education, mortgages for real estate purchases, credit card balances, and bonds issued by governments or corporations to raise capital. The terms of a debt arrangement, such as the interest rate, repayment period, and any collateral required, are typically outlined in a contractual agreement between the borrower and the lender.",
+                "Effective debt management is crucial for maintaining financial stability. While debt can be a useful tool for achieving financial goals, excessive or poorly managed debt can lead to financial stress and instability. Individuals and organizations need to carefully assess their borrowing needs, understand the terms of their debt agreements, and develop sound strategies for repayment.",
+                "By maintaining a healthy balance between leveraging debt for strategic purposes and avoiding overindebtedness, borrowers can navigate their financial obligations successfully and work towards their long-term financial objectives."
+            ],
             "quiz": {
-                "1": [ "Question #1", "Answer #1", "Answer #2", "Answer #3", "Answer #4" ],
-                "2": [ "Question #2", "Answer #1", "Answer #2", "Answer #3", "Answer #4" ],
-                "3": [ "Question #3", "Answer #1", "Answer #2", "Answer #3", "Answer #4" ]
+                "1": [ "How can you succinctly define debt?", "Debt is an obligation to repay borrowed money, involving a promise to return the principal amount with interest over a specified period.", "Answer #2", "Answer #3", "Answer #4" ],
+                "2": [ "What distinguishes mortgages from credit cards in the realm of debt?", "Mortgages are loans specifically for real estate purchases, with the property serving as collateral, while credit cards represent revolving debt with periodic repayments and a set borrowing limit.", "Answer #2", "Answer #3", "Answer #4" ],
+                "3": [ "What are examples of common forms of debt, as mentioned in the reading?", "Loans for education and mortgages for real estate purchases.", "Answer #2", "Answer #3", "Answer #4" ]
             }
         },
-        
         "credit_cards": {
             "read": "",
             "quiz": {
@@ -30,7 +34,6 @@
                 "3": [ "Question #3", "Answer #1", "Answer #2", "Answer #3", "Answer #4" ]
             }
         },
-
         "financial_aid": {
             "read": "",
             "quiz": {
@@ -39,7 +42,6 @@
                 "3": [ "Question #3", "Answer #1", "Answer #2", "Answer #3", "Answer #4" ]            
             }
         },
-
         "stock_market": {
             "read": "",
             "quiz": {
@@ -48,7 +50,6 @@
                 "3": [ "Question #3", "Answer #1", "Answer #2", "Answer #3", "Answer #4" ]          
             }
         },
-
         "retirement_plans": {
             "read": "",
             "quiz": {
@@ -57,7 +58,6 @@
                 "3": [ "Question #3", "Answer #1", "Answer #2", "Answer #3", "Answer #4" ]         
             }
         },
-
         "cryptocurrency": {
             "read": "",
             "quiz": {
